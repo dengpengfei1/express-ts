@@ -1,3 +1,3 @@
 module.exports = function(p: number) {
-  console.log(p)
-}
+  console.log(p);
+};

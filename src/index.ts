@@ -1,3 +1,9 @@
-const fn = require('./router/router')
-console.log(2);
-fn(123)
+const express = require('express')
+
+const app = express()
+
+app.get('/1', (req, res) => {
+  res.json({
+    param: 1
+  })
+})
