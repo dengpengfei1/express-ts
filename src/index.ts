@@ -7,3 +7,5 @@ app.get('/1', (req, res) => {
     param: 1
   })
 })
+
+app.listen(3000)

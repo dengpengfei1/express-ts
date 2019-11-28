@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "declaration": false,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "noLib": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
