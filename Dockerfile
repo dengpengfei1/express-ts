@@ -1,4 +1,4 @@
- # 指定我们的基础镜像是node，版本是v8.0.0
+ # 指定我们的基础镜像是node，可以添加版本号
  FROM node
  # 指定制作我们的镜像的联系人信息（镜像创建者）
  MAINTAINER MR DENG
@@ -11,14 +11,14 @@
 #  VOLUME [ "/data" ]
 
  # 安装项目依赖包
-#  RUN npm install
+ RUN npm install express
  
  # 配置环境变量
 #  ENV HOST 0.0.0.0
 #  ENV PORT 8080
  
  # 容器对外暴露的端口号
-#  EXPOSE 8080
+ EXPOSE 3000
  
  # 容器启动时执行的命令，类似npm run start
  CMD ["node", "app.js"]

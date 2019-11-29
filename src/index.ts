@@ -2,9 +2,9 @@ const express = require('express')
 
 const app = express()
 
-app.get('/1', (req, res) => {
+app.get('/:u', (req, res) => {
   res.json({
-    param: 1
+    url: req.url
   })
 })
 
