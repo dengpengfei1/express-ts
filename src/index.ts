@@ -4,9 +4,10 @@ const express = require('express')
 
 const app = express()
 
-// app.use('/static', express.static(path.join(__dirname, 'public')))
+app.use('/static', express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
+  // res.status(302).location('http://baidu.com'); // status 302 时设置 location，重定向到目的地址
   res.json({
     url: req.url
   })
